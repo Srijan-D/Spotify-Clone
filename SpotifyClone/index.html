@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#" />
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify" />Spotify</li>
+        <li class="reg">&reg;</li>
+
+        <li>Home</li>
+        <li>About Us</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songList">
+        <h1>Top hits of 2021</h1>
+        <div class="songContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Gravestone</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >03:21 <button class="playbtn" id="0"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Understand</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >03:00
+
+              <button class="playbtn" id="1"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Better days</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >03:05 <button class="playbtn" id="2"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Alone</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >02:51 <button class="playbtn" id="3"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Survive</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >03:15 <button class="playbtn" id="4"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Paranoia</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >02:21 <button class="playbtn" id="5"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Darkness</span>
+            <span class="play"></span>
+            <span class="timestamp"
+              >02:59 <button class="playbtn" id="6"></button
+              ><i class="far playFont fa-1x fa-play-circle"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner"></div>
+    </div>
+
+    <div class="bottom">
+      <!-- <div class="bt">  to use text-align:centre for centering the progress bar-->
+      <input type="range" name="range" id="progressBar" min="0" max="100" />
+
+      <!-- </div> -->
+      <div class="icons">
+        <button id="back" class="song-btn" hidden></button>
+        <label for="back">
+          <i class="fas fa-2x fa-step-backward fas-btn"></i
+        ></label>
+        <button id="btn" class="song-btn" hidden></button>
+        <label for="btn"> <i class=" fa-2x fa-solid fa-pause pause-btn"></i></label>
+
+        <button id="next" class="song-btn" hidden></button>
+        <label for="next">
+          <i class="fas fa-2x fa-step-forward fas-btn"></i>
+        </label>
+
+        <!--font awesome icons-->
+      </div>
+      <div class="songInfo">
+        <img src="playing.gif" width="70px" id="gif" />
+        <span id="songDisplay"> ¯\_(ツ)_/¯ </span>
+      </div>
+    </div>
+    <!-- <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://kit.fontawesome.com/eead87afcf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="app.js"></script>
+    <!-- async was used here READ -->
+  </body>
+</html>

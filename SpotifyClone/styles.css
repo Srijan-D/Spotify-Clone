@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(146, 225, 228);
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  height: 62px;
+  background-color: black;
+  list-style: none;
+  align-items: center;
+  color: white;
+}
+nav ul li {
+  padding: 0px 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.reg {
+  position: absolute;
+  left: 112.5px;
+  top: 20px;
+  color: white;
+  padding: 0;
+  font-size: 11px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Oxygen", sans-serif;
+}
+.container {
+  font-family: "Oxygen", sans-serif;
+  min-height: 75vh; /* for sticky to work in bottom class*/
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 20px auto;
+  width: 75%;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: url("bg.jpg");
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.brand img {
+  padding: 0 5px;
+  width: 35px;
+}
+
+.bottom {
+  position: sticky; /*for this to work we need to give a min height to the container class*/
+  /* top: 2000px; */
+  height: 100px;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* .bt{
+  text-align: center; a div tag in which progress bar is present is one way to use text-align:centre
+} */
+
+#progressBar {
+  width: 80vw;
+  text-align: center; /* it wont work , for it to work put this command in a different div tag and use it command in that div tag*/
+  cursor: pointer;
+}
+
+.icons {
+  margin: 12px;
+}
+.icons i {
+  z-index: 10;
+  cursor: pointer;
+}
+.songItem {
+  display: flex;
+  height: 50px;
+  width: 200%;
+  background-color: white;
+  color: black;
+  margin: 12px auto;
+  justify-content: space-between;
+  align-items: center; /*vertically aligns centre*/
+  padding-right: 8px;
+  border-radius: 20px;
+  font-weight: bold;
+
+  font-family: "Oxygen", sans-serif;
+}
+.songItem img {
+  height: 50px;
+  width: 60px;
+  border-radius: 20px;
+  border: cyan 2px solid;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songContainer {
+  margin-top: 70px;
+}
+
+.songInfo {
+  position: absolute;
+  /*The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block.*/
+  left: 9.6vw;
+  font-family: "Oxygen", sans-serif;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+#abc {
+  color: black;
+}
+
+.playbtn {
+  position: absolute;
+  border: black solid 3px;
+  border-radius: 10px;
+  height: 18px;
+  width: 17px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.playFont {
+}
+
+#next,
+#back {
+}
+.fas-btn {
+  color: white;
+}
